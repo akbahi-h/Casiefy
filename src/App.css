@@ -36,3 +36,149 @@
     transform: rotate(360deg);
   }
 }
+.fontfamily{
+  font-family: 'poppins',sans-serif;
+}
+.bg-color{
+  background: linear-gradient(to right, #141e30,#243b55);
+}
+.line {
+  width: 200px;
+  height: 2px;
+  background: lightgray;
+  position: relative;
+  margin: auto;
+}
+
+.line::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: blue;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-outline-info:hover {
+  color: black !important;
+}
+.btn-outline-danger:hover {
+  color: white !important;
+}
+.btn-outline-warning:hover {
+  color: white !important;
+}
+/* .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.about-image img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+} */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+.about-image img {
+  width: 320px;   /* ya jo size chaho */
+  height: auto;
+  border-radius: 12px;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    flex: none;
+  }
+}
+
+
+/* feedback form */
+.card {
+  width: 100%;
+  max-width: 480px;
+  padding: 25px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+/* na item scale  */
+.nav-item {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+}
+/* toggl */
+body.light {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: #0f172a;
+  color: white;
+}
+body {
+  transition: all 0.3s ease;
+}
+/* Light mode button */
+button {
+  color: black;
+}
+
+/* Dark mode button */
+body.dark button {
+  color: white;
+}
+body.dark button {
+  color: white;
+  background-color: #1e293b;
+}
+body.dark .btn {
+  color: white !important;
+}
+/* fixed  navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+
+

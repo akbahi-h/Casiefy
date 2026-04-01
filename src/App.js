@@ -1,24 +1,60 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Changer from './components/Changer';
+import CaseifyFooter from './components/CaseifyFooter';
+import ContactFeedback from './components/ContactFeedback';
+import Security from './components/Security';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+ 
+
+<div class="navbar">
+
+  
+ <Navbar/>
+</div>
+ <div className='container my-5'>
+  <Changer/>
+ </div>
+<div
+  className="container"
+  style={{
+    minHeight: "90vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: "linear-gradient(135deg, #0f172a, #1e293b)",
+    borderRadius: "25px",
+    overflow: "hidden"
+  }}
+>
+  <div className="card">
+    <ContactFeedback />
+  </div>
+</div>
+<div class="container my-5"
+  style={{
+    minHeight: "90vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    background: "linear-gradient(135deg, #0f172a, #1e293b)",
+    borderRadius: "25px",
+    overflow: "hidden"
+  }}
+>
+  <Security/>
+</div>
+  
+  
+ <CaseifyFooter/>
+ 
+ </>
   );
 }
 
