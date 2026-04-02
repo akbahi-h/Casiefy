@@ -48,17 +48,17 @@ const textOnChange=(e)=>{
 
 // contact form 
 
-const buttonStyle = {
-  background: "#3b82f6",
-  color: "white",
-  border: "none",
-  padding: "10px 15px",
-  borderRadius: "8px",
-  cursor: "pointer",
-  flex: "1 1 120px", // 👈 IMPORTANT
-  minWidth: "120px",
-  textAlign: "center"
-};
+// const buttonStyle = {
+//   background: "#3b82f6",
+//   color: "white",
+//   border: "none",
+//   padding: "10px 15px",
+//   borderRadius: "8px",
+//   cursor: "pointer",
+//   flex: "1 1 120px", // 👈 IMPORTANT
+//   minWidth: "120px",
+//   textAlign: "center"
+// };
 
   return (
    <>

@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './components/Navbar';
 import Changer from './components/Changer';
@@ -14,7 +15,7 @@ function App() {
  
 
 <div class="navbar">
-
+{/* <img src={myLogo} alt="logo" /> */}
   
  <Navbar/>
 </div>

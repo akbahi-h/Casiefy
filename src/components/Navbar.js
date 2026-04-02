@@ -1,4 +1,5 @@
 import React from 'react'
+import myLogo from "../Images/logo.png";
 import Darktoggl from './Drktoggl'
 
 export default function Navbar() {
@@ -7,6 +8,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-color  rounded-2 p-2">
 
   <div className="container-fluid m-2 mx-3">
+     <img className='logo mx-2' src={myLogo} alt="logo" width="50" />
     
     <a className="navbar-brand fw-bold fs-2 text-white fontfamily" href="/">Caseify</a>
 
